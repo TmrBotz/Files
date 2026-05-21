@@ -89,18 +89,20 @@ def get_file_details(message) -> dict:
     return {}
 
 def format_caption(caption: str, file_details: dict) -> str:
-    caption = caption.replace("{file_name}", file_details.get("file_name", ""))
-    caption = caption.replace("{previouscaption}", file_details.get("previouscaption", ""))
-    caption = caption.replace("{filename}", file_details.get("filename", ""))
-    caption = caption.replace("{username}", file_details.get("username", ""))
-    caption = caption.replace("{file_caption}", file_details.get("file_caption", ""))
-    caption = caption.replace("{size}", file_details.get("file_size", ""))
-    caption = caption.replace("{duration}", file_details.get("duration", ""))
-    caption = caption.replace("{quality}", file_details.get("quality", ""))
-    caption = caption.replace("{language}", file_details.get("language", ""))
-    caption = caption.replace("{name}", file_details.get("name", ""))
-    caption = caption.replace("{season}", file_details.get("season", ""))
-    caption = caption.replace("{format}", file_details.get("format", ""))
-    return caption
+    return (
+        caption
+        .replace("{file_name}", file_details.get("file_name", ""))
+        .replace("{previouscaption}", file_details.get("previouscaption", ""))
+        .replace("{filename}", file_details.get("filename", ""))
+        .replace("{username}", file_details.get("username", ""))
+        .replace("{file_caption}", file_details.get("file_caption", ""))
+        .replace("{size}", file_details.get("file_size", ""))
+        .replace("{duration}", file_details.get("duration", ""))
+        .replace("{quality}", file_details.get("quality", ""))
+        .replace("{language}", file_details.get("language", ""))
+        .replace("{name}", file_details.get("name", ""))
+        .replace("{season}", file_details.get("season", ""))
+        .replace("{format}", file_details.get("format", ""))
+    )
 
 
