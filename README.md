@@ -25,7 +25,7 @@
 | 🤖 **Multi-User Bot Creation** | Users create their own FileStore bots via inline buttons |
 | 📂 **File Storage & Sharing** | Store files in channels and share via deep-link URLs |
 | 🔗 **Force Subscribe** | Join & Request modes with multiple channels per bot |
-| 💰 **URL Shortener** | AdLinkFly-compatible link monetization per bot |
+| 💰 **URL Shortener** | Compatible link monetization per bot |
 | 👥 **Admin Management** | Add/remove admins per bot |
 | ⏱ **Auto-Delete Timer** | Files auto-delete after a configurable time |
 | 📩 **Custom Start Message & Photo** | Bot owners personalize their bot's welcome screen |
