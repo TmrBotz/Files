@@ -437,11 +437,19 @@ class WorkerEngine:
 
                 if not start_message:
                     start_message = (
-                        f"<blockquote>ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention}!\n\n"
-                        f"ɪ ᴄᴀɴ sᴛᴏʀᴇ ꜰɪʟᴇs ᴀɴᴅ sʜᴀʀᴇ ᴛʜᴇᴍ\n"
-                        f"ᴠɪᴀ sᴘᴇᴄɪᴀʟ ʟɪɴᴋs.\n\n"
-                        f"ᴘᴏᴡᴇʀᴇᴅ ʙʏ @cantarellabots</blockquote>"
+                        f"<b>Hᴇʟʟᴏ {message.from_user.mention},\n\n"
+                        f"ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ\n"
+                        f"ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.\n\n"
+                        f"𝖩𝗈𝗂𝗇  ➥ 「 @SkyHub4u」</b>"
                     )
+                    buttons = InlineKeyboardMarkup([
+    [
+        InlineKeyboardButton(
+            "👨‍💻 Admin",
+            url="https://t.me/Connecting_iBot"
+        )
+    ]
+])
                 else:
                     try:
                         me = await client.get_me()
@@ -458,9 +466,16 @@ class WorkerEngine:
                         pass
 
                 if start_pic and start_pic.lower() not in ["none", "ɴᴏɴᴇ", "0"]:
-                    await message.reply_photo(photo=start_pic, caption=start_message)
+                    await message.reply_photo(
+    photo=start_pic,
+    caption=start_message,
+    reply_markup=buttons
+)
                 else:
-                    await message.reply(start_message)
+                    await message.reply(
+    start_message,
+    reply_markup=buttons
+)
 
         # =====================================================================
         # HANDLER: Chat join request (request-based force-sub)
