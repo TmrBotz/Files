@@ -34,7 +34,7 @@ CHANNEL_ID = 0
 MAIN_LOG_CHANNEL = int(os.environ.get("MAIN_LOG_CHANNEL", "-1002205504138"))
 
 # Force-subscribe channel for the main bot (username without @)
-FSUB_CHANNEL = os.environ.get("FSUB_CHANNEL", "Movies_Hike") 
+FSUB_CHANNEL = os.environ.get("FSUB_CHANNEL", "") 
 
 # =============================================================================
 # ENCRYPTION — Used to secure bot tokens in the database
@@ -60,7 +60,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "8"))
 PORT = int(os.environ.get("PORT", "8080"))
 
 # Maximum number of bots a single user can create
-MAX_BOTS_PER_USER = int(os.environ.get("MAX_BOTS_PER_USER", "1"))
+MAX_BOTS_PER_USER = int(os.environ.get("MAX_BOTS_PER_USER", "10"))
 
 # Default auto-delete time for files (in seconds, 0 = disabled)
 DEFAULT_AUTO_DELETE = int(os.environ.get("DEFAULT_AUTO_DELETE", "0"))
