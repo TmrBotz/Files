@@ -437,10 +437,10 @@ class WorkerEngine:
 
                 if not start_message:
                     start_message = (
-                        f"<blockquote>ᴡᴇʟᴄᴏᴍᴇ {message.from_user.mention}!\n\n"
-                        f"ɪ ᴄᴀɴ sᴛᴏʀᴇ ꜰɪʟᴇs ᴀɴᴅ sʜᴀʀᴇ ᴛʜᴇᴍ\n"
-                        f"ᴠɪᴀ sᴘᴇᴄɪᴀʟ ʟɪɴᴋs.\n\n"
-                        f"ᴘᴏᴡᴇʀᴇᴅ ʙʏ @cantarellabots</blockquote>"
+                        f"<b>Hᴇʟʟᴏ {message.from_user.mention},\n\n"
+                        f"ɪ ᴀᴍ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ, ɪ ᴄᴀɴ sᴛᴏʀᴇ\n"
+                        f"ᴘʀɪᴠᴀᴛᴇ ғɪʟᴇs ɪɴ sᴘᴇᴄɪғɪᴇᴅ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴏᴛʜᴇʀ ᴜsᴇʀs ᴄᴀɴ ᴀᴄᴄᴇss ɪᴛ ғʀᴏᴍ sᴘᴇᴄɪᴀʟ ʟɪɴᴋ.\n\n"
+                        f"𝖩𝗈𝗂𝗇  ➥ 「 @SkyHub4u」</b>"
                     )
                 else:
                     try:
