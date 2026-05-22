@@ -31,7 +31,7 @@ DB_NAME = MONGO_DB_NAME # Alias for old bot.py
 CHANNEL_ID = 0
 
 # Central log channel for logging bot creations and generated links
-MAIN_LOG_CHANNEL = int(os.environ.get("MAIN_LOG_CHANNEL", "-1002205504138"))
+MAIN_LOG_CHANNEL = int(os.environ.get("MAIN_LOG_CHANNEL", "-1002233093561"))
 
 # Force-subscribe channel for the main bot (username without @)
 FSUB_CHANNEL = os.environ.get("FSUB_CHANNEL", "") 
@@ -66,7 +66,7 @@ MAX_BOTS_PER_USER = int(os.environ.get("MAX_BOTS_PER_USER", "10"))
 DEFAULT_AUTO_DELETE = int(os.environ.get("DEFAULT_AUTO_DELETE", "0"))
 
 # Rate limiting: minimum seconds between bot creation attempts
-BOT_CREATION_COOLDOWN = int(os.environ.get("BOT_CREATION_COOLDOWN", "30"))
+BOT_CREATION_COOLDOWN = int(os.environ.get("BOT_CREATION_COOLDOWN", "15"))
 
 # Hibernation: auto-stop idle bots after this many hours (lower = more RAM savings)
 HIBERNATION_HOURS = int(os.environ.get("HIBERNATION_HOURS", "48"))
@@ -77,19 +77,15 @@ HIBERNATION_HOURS = int(os.environ.get("HIBERNATION_HOURS", "48"))
 
 START_PIC = os.environ.get(
     "START_PIC",
-    "https://ibb.co/95CW1J7"
+    "https://iili.io/CH23pPR.jpg"
 )
 
 FORCE_PIC = os.environ.get(
     "FORCE_PIC",
-    "https://ibb.co/mFJY2bhx"
+    "https://iili.io/CH23pPR.jpg"
 )
 
-START_MSG = """<b>━━━━━━━━━━━━━━━━━━━━━
-⚡ 𝗖𝗔𝗡𝗧𝗔𝗥𝗘𝗟𝗟𝗔 𝗙𝗜𝗟𝗘𝗦𝗧𝗢𝗥𝗘 ⚡
-━━━━━━━━━━━━━━━━━━━━━</b>
-
-<blockquote>ᴡᴇʟᴄᴏᴍᴇ, {mention}!
+START_MSG = """<blockquote>ᴡᴇʟᴄᴏᴍᴇ, {mention}!
 
 ɪ ᴀᴍ ᴀ <b>ᴘʀᴇᴍɪᴜᴍ ᴍᴜʟᴛɪ-ᴜsᴇʀ ꜰɪʟᴇsᴛᴏʀᴇ</b> ᴘʟᴀᴛꜰᴏʀᴍ.
 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ꜰɪʟᴇsᴛᴏʀᴇ ʙᴏᴛ ɪɴ sᴇᴄᴏɴᴅs!
@@ -138,7 +134,7 @@ ABOUT_MSG = """<b>━━━━━━━━━━━━━━━━━━━━�
 ℹ️ 𝗔𝗕𝗢𝗨𝗧
 ━━━━━━━━━━━━━━━━━━━━━</b>
 
-<blockquote><b>⚡ ᴄᴀɴᴛᴀʀᴇʟʟ ꜰɪʟᴇsᴛᴏʀᴇ ᴠ3.0</b>
+<blockquote><b>⚡ ꜰɪʟᴇsᴛᴏʀᴇ ᴠ3.0</b>
 
 ᴀ ᴘʀᴇᴍɪᴜᴍ ᴍᴜʟᴛɪ-ᴜsᴇʀ ᴛᴇʟᴇɢʀᴀᴍ
 ꜰɪʟᴇsᴛᴏʀᴇ ᴘʟᴀᴛꜰᴏʀᴍ.
@@ -153,7 +149,7 @@ ABOUT_MSG = """<b>━━━━━━━━━━━━━━━━━━━━�
 │ ◈ ᴀᴜᴛᴏ-ʜɪʙᴇʀɴᴀᴛɪᴏɴ
 ╰──────────────────╯
 
-<b>ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ</b> @cantarellabots</blockquote>"""
+<b>ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ</b> @Tmr_Developer</blockquote>"""
 
 FORCE_MSG = """<b>━━━━━━━━━━━━━━━━━━━━━
 🔒 𝗔𝗖𝗖𝗘𝗦𝗦 𝗥𝗘𝗦𝗧𝗥𝗜𝗖𝗧𝗘𝗗
